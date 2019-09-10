@@ -17,6 +17,19 @@ public class Geometry
         System.out.print("A decagon has "+ (sides+(10-sides))+" sides\n");
         System.out.print("A dodecagon has "+ (sides+(12-sides))+" sides\n");
         System.out.print("The circumference of a circle with a radius of "
-        + radius+" is "+(2*PI*radius));
+        + radius+" is "+(2*PI*radius)+"\n");
+        
+        int a = 40;
+        int b = 6;
+        //c needs to be double or lossey error
+        double c;
+        double y = 6.0;
+        double z;
+        
+        c = a/y;
+        System.out.print("c = "+c+"\n");
+        
+        z = (double) a/b;
+        System.out.print("z = "+z+"\n");
     }
 }
