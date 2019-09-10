@@ -21,11 +21,12 @@ public class Geometry
         
         int a = 40;
         int b = 6;
-        //c needs to be double or lossey error
         double c;
+        double x = 40.0;
         double y = 6.0;
         double z;
         
+        //c needs to be double or lossey error
         c = a/y;
         System.out.print("c = "+c+"\n");
         
