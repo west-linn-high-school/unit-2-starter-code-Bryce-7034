@@ -22,8 +22,10 @@ public class Geometry
         int a = 40;
         int b = 6;
         double c;
-        double x = 40.0;
-        double y = 6.0;
+        double x = 2.5;
+        double y = -1.5;
+        int n = 4;
+        System.out.println("hey" + (x + n * y - (x + n) * y));
         double z;
         int num_1 = 11;
         int num_2 = 456;
