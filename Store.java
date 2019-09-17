@@ -36,8 +36,10 @@ System.out.println("|      STEVE S-MART                                        |
 System.out.println("|      1234 STEVIE ST.                                     |");
 System.out.println("|      The Cashier That Helped You Was: Steve              |");
 System.out.println("|    -------------------------------------------------     |");
+System.out.println("|             Item         Amount                 Price    |");
 System.out.println("|                                                          |");
-System.out.println("|                 Books       X"+books+"          "+booksPrice+"|");
+System.out.println("|            Books       X"+books+"          "+booksPrice+"|");
+System.out.println("|                                                          |");
 
 
 
