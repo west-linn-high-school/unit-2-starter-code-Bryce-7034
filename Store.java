@@ -5,8 +5,8 @@ public class Store{
   public static void main(String[]args){
     Scanner input = new Scanner(System.in);
     Random rand = new Random();
-    int month = rand.nextInt(12);
-    int day = rand.nextInt(29);
+    int month = rand.nextInt(12)+1;
+    int day = rand.nextInt(28)+1;
     int hours = rand.nextInt(24);
     int minute = rand.nextInt(60);
 
@@ -41,20 +41,20 @@ public class Store{
     double finalPrice = Math.round(tax * 100.0)/100.0;
 
 
-System.out.println("============================================================");
-System.out.println("|      STEVE S-MART                                        ");
-System.out.println("|      1234 STEVIE ST.                                     ");
-System.out.println("|      The Cashier That Helped You Was: Steve              ");
-System.out.println("|    -------------------------------------------------     ");
-System.out.println("|             Item         Amount                 Price    ");
-System.out.println("|                                                          ");
-System.out.println("|            Books          X"+books+"                   "+booksPrice+"      ");
-System.out.println("|                                                          ");
-System.out.println("|            Movies         X"+movies+"                   "+moviesPrice+"      ");
-System.out.println("|                                                          ");
-System.out.println("|            Peanuts        X"+peanuts+"                 "+peanutsPrice+"      ");
-System.out.println("|                                                          ");
-System.out.println("|                                                          ");
+System.out.print("============================================\n"
++"|      STEVE S-MART                                        \n"
++"|      1234 STEVIE ST.                                     \n"
++"|  Cashier: Steve              \n"
++"|-----------------------------------------------\n"
++"|Item      Amount       Price    \n"
++"|                                              \n"
++"|Books     X"+books+"         "+booksPrice+"\n"
++"|                                              \n"
++"|Movies    X"+movies+"         "+moviesPrice+"\n"
++"|                                              \n"
++"|Peanuts   X"+peanuts+"       "+peanutsPrice+"\n"
++"|                                                          \n"
++"|Sub-Total:                                                          \n");
 
 
 
