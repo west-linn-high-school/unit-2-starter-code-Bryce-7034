@@ -43,7 +43,7 @@ public class Snowman extends Application{
     final double point1Y = 47.0;
     final double point1X =  195.0;
     final double point2_3Y = 57.0;
-    final double point2X = 170.0;
+    final double point2X = 110.0;
     final double point3X = 202.0;
     final int sceneX = 400;
     final int sceneY = 300;
@@ -59,6 +59,8 @@ public class Snowman extends Application{
     Circle leftEye = new Circle(lefteyeX, eyesY, eyesR);
     Circle rightEye = new Circle(righteyeX, eyesY, eyesR);
     Polygon nose = new Polygon();
+    Polygon leftFingers = new Polygon();
+    Polygon rightFingers = new Polygon();
     nose.getPoints().addAll(new Double[]{
       point1X, point1Y,
       point2X, point2_3Y,
