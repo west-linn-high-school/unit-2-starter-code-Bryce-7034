@@ -13,25 +13,34 @@ public class Snowman extends Application{
 
   public void start(Stage stage){
     //No Magic Numbers
+    //ground
     final int groundX = 0;
     final int groundY = 220;
     final int groundHeight = 80;
     final int groundWidth = 400;
+    //x of snowman
     final int snowmanX = 200;
+    //head
     final int headY = 43;
     final int headR = 25;
+    //arms
     final int leftArmX = 150;
     final int rightArmX = 220;
-    final int arms_bodyY = 95;
     final int armsHeight = 10;
     final int armsWidth = 30;
+    //Y of arms and body
+    final int arms_bodyY = 95;
+    //body
     final int bodyR = 30;
+    //lower body
     final int lowerbodyY = 170;
     final int lowerbodyR = 50;
+    //base of the hat
     final int hatbaseX = 185;
     final int hatbaseY = 18;
     final int hatbaseHeight = 10;
     final int hatbaseWidth = 30;
+    //top of the hat
     final int hattopX = 190;
     final int hattopY = 1;
     final int hattopHeight = 17;
@@ -43,7 +52,7 @@ public class Snowman extends Application{
     final double point1Y = 47.0;
     final double point1X =  195.0;
     final double point2_3Y = 57.0;
-    final double point2X = 110.0;
+    final double point2X = 170.0;
     final double point3X = 202.0;
     final int sceneX = 400;
     final int sceneY = 300;
