@@ -13,40 +13,40 @@ import javafx.stage.Stage;
 public class FirstFX extends Application{
 
   public void start(Stage stage){
-    final Int groundX = 0;
-    final Int groundY = 120;
-    final Int groundHeight = 80;
-    final Int groundWidth = 400;
-    final Int snowmanX = 200;
-    final Int headY = 235;
-    final Int headR = 15;
-    final Int leftArmX = 150;
-    final Int rightArmX = 220;
-    final Int arms_bodyY = 190;
-    final Int armsHeight = 10;
-    final Int armsWidth = 30;
-    final Int bodyR = 30;
-    final Int lowerbodyY = 110;
-    final Int lowerbodyR = 50;
-    final Int hatbaseX = 185;
-    final Int hatbaseY = 245;
-    final Int hatbaseHeight = 10;
-    final Int hatbaseWidth = 30;
-    final Int hattopX = 190;
-    final Int hattopY = 285;
-    final Int hattopHeight = 40;
-    final Int hattopWidth = 20;
-    final Int lefteyeX = 185;
-    final Int righteyeX = 195;
-    final Int eyesY = 240;
-    final Int eyesR = 5;
-    final Int point1Y = 235;
-    final Int point1X =  200;
-    final Int point2_3Y = 225;
-    final Int point2X = 195;
-    final Int point3X = 205;
-    final Int sceneX = 400;
-    fianl Int sceneY = 300;
+    final int groundX = 0;
+    final int groundY = 120;
+    final int groundHeight = 80;
+    final int groundWidth = 400;
+    final int snowmanX = 200;
+    final int headY = 235;
+    final int headR = 15;
+    final int leftArmX = 150;
+    final int rightArmX = 220;
+    final int arms_bodyY = 190;
+    final int armsHeight = 10;
+    final int armsWidth = 30;
+    final int bodyR = 30;
+    final int lowerbodyY = 110;
+    final int lowerbodyR = 50;
+    final int hatbaseX = 185;
+    final int hatbaseY = 245;
+    final int hatbaseHeight = 10;
+    final int hatbaseWidth = 30;
+    final int hattopX = 190;
+    final int hattopY = 285;
+    final int hattopHeight = 40;
+    final int hattopWidth = 20;
+    final int lefteyeX = 185;
+    final int righteyeX = 195;
+    final int eyesY = 240;
+    final int eyesR = 5;
+    final int point1Y = 235;
+    final int point1X =  200;
+    final int point2_3Y = 225;
+    final int point2X = 195;
+    final int point3X = 205;
+    final int sceneX = 400;
+    final int sceneY = 300;
 
     Rectangle ground = new Rectangle(groundX, groundY, groundWidth, groundHeight);
     Circle head = new Circle(snowmanX, headY, headR);
@@ -59,7 +59,7 @@ public class FirstFX extends Application{
     Circle leftEye = new Circle(lefteyeX, eyesY, eyesR);
     Circle rightEye = new Circle(righteyeX, eyesY, eyesR);
     Polygon nose = new Polygon();
-    nose.getPoints().addAll(new Int[]{
+    nose.getPoints().addAll(new int[]{
       point1X, point1Y,
       point2X, point2_3Y,
       point3X, point2_3Y });
@@ -97,9 +97,10 @@ public class FirstFX extends Application{
     nose.setStroke(Color.BLACK);
     nose.setFill(Color.ORANGE);
 
-    Group root = new Group(start, response, box1, box2, ellipse1, circle2);
-    Group root2 = new Group(root, polygon1, circle3);
-    Scene scene = new Scene(root2, sceneX, sceneY, Color.LIGHTBLUE);
+    Group root = new Group(ground, head, leftArm, rightArm, body);
+    Group root2 = new Group(root, lowerBody, hatBase, hatTop, leftEye, rightEye);
+    Group root3 = new Group(root2, nose);
+    Scene scene = new Scene(root3, sceneX, sceneY, Color.LIGHTBLUE);
 
     stage.setTitle("FXFirst");
     stage.setScene(scene);
